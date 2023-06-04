@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>오늘 뭐해먹지?</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/jumbotron/">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .nav-link:hover {
+            background-color: lightgray;
+        }
+    </style>
+
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+<main>
+    <div class="container py-4">
+        <header class="pb-3 mb-4 border-bottom">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+<!--                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" fill="currentColor" class="bi bi-cup-straw" viewBox="0 0 16 16">
+                            <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82 0 .046-.004.09-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87-1.516 0-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A.78.78 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278zM9.768 4.607A13.991 13.991 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.284 3.284 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085l.18-.808zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a5.514 5.514 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69 1.27 0 2.081-.441 2.438-.69.042-.029.09-.094.102-.215l.852-8.03a5.517 5.517 0 0 1-.435.127 8.88 8.88 0 0 1-.89.17zM4.467 4.884s.003.002.005.006l-.005-.006zm7.066 0-.005.006c.002-.004.005-.006.005-.006zM11.354 5a3.174 3.174 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222z"/>
+                        </svg>
+                        <span class="fs-4">오늘 뭐 해먹지?</span>
+                    </a>
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="/" class="nav-link px-2 text-dark"> 메인</a></li>
+                        <li><a href="/recipe/list?page=1" class="nav-link px-2 text-dark">전체 레시피</a></li>
+                        <li><a href="/recipe/write" class="nav-link px-2 text-dark">레시피 등록</a></li>
+                        <li><a href="#" class="nav-link px-2 text-dark">마이페이지</a></li>
+                    </ul>
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                        <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Search..." aria-label="Search">
+                    </form>
+                    <div class="text-end">
+                        <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                        <button type="button" href="/signup" class="btn btn-warning">Sign-up</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <div class="p-5 mb-4 bg-light rounded-3" style="background-image: url('your-image-url.jpg');">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">오늘 뭐 해먹지?</h1>
+                <p class="col-md-8 fs-4">집에 있는 식재료를 선택하면 그에 맞는 레시피를 추천해드립니다!</p>
+                <button onclick="toggleNavtabs()" id="showButton" type="button" class="btn btn-outline-primary">재료 선택하기</button>
+                <button id="showButton2" type="button" class="btn btn-outline-primary">전체 레시피 보기</button>
+
+            </div>
+        </div>
+
+        <div >
+        <ul style="display: none" id="navtabs1" class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">주재료</a>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">삼겹살</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">목살</label>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">양념</a>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">고추장</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                    <label class="form-check-label" for="inlineCheckbox4">된장</label>
+                </div>
+            </li>
+            <br>
+            <button type="button" class="btn btn-outline-primary">레시피 검색</button>
+        </ul>
+        </div>
+
+        <!--   컨텐츠5 -->
+        <div class="contents-5 con-min-width container">
+            <div class="title row">
+                <div class="main-title">인기레시피</div>
+                <div class="sub-title">많은 분들이 찾아본 인기 레시피를 소개합니다.</div>
+            </div>
+            <div class="item-list-wrap con col-sm-4">
+                <ul class="item-list flex">
+                    <li class="item">
+                        <div class="tumb"><a href="#" class="img-box"><img class="img-fluid" src="https://i.postimg.cc/bwQGPnGd/2020-08-25-427865954-12.jpg" alt=""></a></div>
+                        <div class="info">
+                            <div class="info-tag">
+                                <span>#덮밥요리</span>
+                                <span>#오뚜기햄</span>
+                                <span>#골드마요네스</span>
+                            </div>
+                            <div class="info-title">햄마요덮밥</div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="tumb"><a href="#" class="img-box"><img class="img-fluid" src="https://i.postimg.cc/SKfZ0KFC/2020-08-25-427865954-2.jpg" alt=""></a></div>
+                        <div class="info">
+                            <div class="info-tag">
+                                <span>#파스타샐러드</span>
+                                <span>#키즈셰프</span>
+                                <span>#토마토퓨레</span>
+                            </div>
+                            <div class="info-title">토마토 냉파스타</div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="tumb"><a href="#" class="img-box"><img class="img-fluid" src="https://i.postimg.cc/g2vsR00Q/2020-08-25-427863666-8.jpg" alt=""></a></div>
+                        <div class="info">
+                            <div class="info-tag">
+                                <span>#치즈듬뿍</span>
+                                <span>#단짠단짠</span>
+                                <span>#골드마요네스</span>
+                            </div>
+                            <div class="info-title">콘치즈</div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="tumb"><a href="#" class="img-box"><img class="img-fluid" src="https://i.postimg.cc/gcnfhvb7/2020-08-25-427863666-2.jpg" alt=""></a></div>
+                        <div class="info">
+                            <div class="info-tag">
+                                <span>#3일숙성카레</span>
+                                <span>#카레맛집</span>
+                                <span>#쇠고기</span>
+                            </div>
+                            <div class="info-title">카레 비프 스튜</div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="tumb"><a href="#" class="img-box"><img class="img-fluid" src="https://i.postimg.cc/xdfZ1mPt/2020-08-24-427854552-10.jpg" alt=""></a></div>
+                        <div class="info">
+                            <div class="info-tag">
+                                <span>#셰프의팁</span>
+                                <span>#즉석국</span>
+                                <span>#캠핑</span>
+                            </div>
+                            <div class="info-title">차돌박이 된장찌개</div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="tumb"><a href="#" class="img-box"><img class="img-fluid" src="https://i.postimg.cc/yN8fHHVG/2020-08-24-427853121-16.jpg" alt=""></a></div>
+                        <div class="info">
+                            <div class="info-tag">
+                                <span>#셰프의팁</span>
+                                <span>#즉석국</span>
+                                <span>#집밥</span>
+                            </div>
+                            <div class="info-title">육개장 칼국수</div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="tumb"><a href="#" class="img-box"><img class="img-fluid" src="https://i.postimg.cc/MHV5DZDn/2020-08-24-427853121-14.jpg" alt=""></a></div>
+                        <div class="info">
+                            <div class="info-tag">
+                                <span>#집밥</span>
+                                <span>#밑반찬</span>
+                                <span>#꿀유자차</span>
+                            </div>
+                            <div class="info-title">유자 연근조림</div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="tumb"><a href="#" class="img-box"><img class="img-fluid" src="https://i.postimg.cc/VkDR4VjW/2020-08-24-427850333-24.jpg" alt=""></a></div>
+                        <div class="info">
+                            <div class="info-tag">
+                                <span>#갈릭아이올리</span>
+                                <span>#계란요리</span>
+                                <span>#브런치</span>
+                            </div>
+                            <div class="info-title">에그마요 샌드위치</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <footer class="pt-3 mt-4 text-muted border-top">
+            &copy; ChaSeongHo
+        </footer>
+    </div>
+</main>
+
+
+
+</body>
+</html>
